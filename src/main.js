@@ -1,10 +1,9 @@
-//make comments
-
 //create class with properties passing through
 class Desserts {
-  constructor (type, calories) {
+  constructor(type, calories) {
     this.type = type;
     this.calories = calories;
+    console.log('Yum');
   }
 }
 
@@ -17,11 +16,15 @@ this.flavor = flavor;
 this.flavor = scoops;
 }
 //adding method into the class ClassName
-
-includeSpoon () {
+includeSpoon() {
 console.log('Here is your spoon!');
 }
-
 }
 
-const vanillaIceCream = new IceCream (Ice Cream, 340, Vanilla, 3) 
+
+//create a new instance called vanillaIceCream
+const vanillaIceCream = new IceCream('Ice Cream', 340, 'Vanilla', 3);
+
+console.log(vanillaIceCream);
+//calling the method
+vanillaIceCream.includeSpoon();
